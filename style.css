@@ -1,110 +1,115 @@
-     body {
-         margin: auto;
-         text-align: center;
-         font-family: sans-serif;
-     }
-     .inputWrapper {
-         margin: auto;
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         padding: 30px 200px;
-         background: #34888c;
-         position: relative;
-     }
-     .inputWrapper input {
-         height: 50px;
-         border: none;
-     }
-     #newTask {
-         width: 70%
-     }
-     #add {
-         width: 30%;
-         background: #7caa2d;
-         cursor: pointer;
-     }
-     .listWrapp {
-         width: 100%;
-     }
-     ul {
-         margin: 0;
-         padding: 0;
-     }
-     li {
-         padding: 10px;
-         font-size: 25px;
-         list-style-type: none;
-         position: relative;
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-pack: justify;
-             -ms-flex-pack: justify;
-                 justify-content: space-between;
-         padding-left: 100px;
-         line-height: 44px;
-     }
-     .line:after {
-         content: "";
-         position: absolute;
-         width: 90%;
-         top: 50%;
-         left: 0;
-         height: 2px;
-         background: #7caa2d;
-         padding: 0
-     }
-     li:nth-child(even) {
-         background: #f5e356;
-     }
-     .buttonWrapper {
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-     }
-     .deleteTask {
-         cursor: pointer;
-         padding-right: 10px;
-         font-size: 38px;
-         color: #f62a00
-     }
-     .checked {
-         color: #7caa2d;
-         cursor: pointer;
-     }
-     .errorMessage {
-         position: absolute;
-         display: none;
-         padding: 5px 10px;
-         top: -33px;
-         left: 50%;
-         background: #f62a00;
-         border-radius: 15px;
-     }
-     .errorMessage:after {
-         content: "";
-         display: block;
-         position: absolute;
-         left: 20%;
-         bottom: -10px;
-         -webkit-transform: translate(-50%, 0);
-             -ms-transform: translate(-50%, 0);
-                 transform: translate(-50%, 0);
-         height: 0;
-         width: 0;
-         border-style: solid;
-         border-width: 15px 8px 0 8px;
-         border-color: #f62a00 transparent transparent transparent;
-         -webkit-transition: all .4s;
-         -o-transition: all .4s;
-         transition: all .4s
-     }
-     @media(max-width: 750px) {
-         .inputWrapper {
-             padding: 30px 6px;
-         }
-         li {
-             padding-left: 10px;
-         }
-     }
+body {
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+.inputWrapper {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px 200px;
+    background: #34888c;
+    position: relative;
+}
+.inputWrapper input {
+    height: 50px;
+    border: none;
+}
+#newTask {
+    width: 70%
+}
+#add {
+    width: 30%;
+    background: #7caa2d;
+    cursor: pointer;
+}
+.listWrapp {
+    width: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding: 10px;
+    font-size: 25px;
+    list-style-type: none;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 100px;
+    line-height: 44px;
+}
+.line:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    background: #7caa2d;
+    padding: 0
+}
+li:nth-child(even) {
+    background: #f5e356;
+}
+.buttonWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.deleteTask {
+    cursor: pointer;
+    padding-right: 10px;
+    font-size: 38px;
+    color: #f62a00
+}
+.checked {
+    color: #7caa2d;
+    cursor: pointer;
+}
+.errorMessage {
+    position: absolute;
+    display: none;
+    padding: 5px 10px;
+    top: -33px;
+    left: 50%;
+    background: #f62a00;
+    border-radius: 15px;
+}
+.errorMessage:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20%;
+    bottom: -10px;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 15px 8px 0 8px;
+    border-color: #f62a00 transparent transparent transparent;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
+}
+@media(max-width: 750px) {
+    .inputWrapper {
+        padding: 30px 6px;
+    }
+    li {
+        padding-left: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .errorMessage {
+        font-size: 9px;
+    }
+}
