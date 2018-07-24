@@ -17,6 +17,7 @@ body {
     border: none;
 }
 .inputWrapper input[type=submit] {
+    height: 52px;
     -webkit-border-radius:0px;
     -webkit-appearance:none;
 }
