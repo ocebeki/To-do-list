@@ -16,6 +16,9 @@ body {
     height: 50px;
     border: none;
 }
+.inputWrapper input[type=submit] {
+    -webkit-border-radius:0px;
+}
 #newTask {
     width: 70%
 }
